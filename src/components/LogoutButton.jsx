@@ -7,7 +7,7 @@ export default function LogoutButton() {
     isAuthenticated && (
       <button 
       onClick={() => logout()}
-      className="px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600"
+      className="px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600 hover:duration-300 transition cursor-pointer"
     >
       Log Out
     </button>

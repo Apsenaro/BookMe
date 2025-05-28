@@ -7,7 +7,7 @@ export default function LoginButton() {
     !isAuthenticated && (
       <button 
       onClick={() => loginWithRedirect()}
-      className="px-4 py-2 bg-amber-500 text-white rounded hover:bg-amber-600"
+      className="px-4 py-2 bg-amber-500 text-white rounded hover:bg-amber-600 hover:duration-300 transition cursor-pointer"
     >
       Log In
     </button>

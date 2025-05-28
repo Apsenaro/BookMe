@@ -1,5 +1,6 @@
 import LoginButton from "./LoginButton";
 import LogoutButton from "./LogoutButton";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
@@ -8,14 +9,14 @@ export default function Header() {
       <div className="flex items-center gap-4">
         <ul className="flex gap-4">
           <li>
-            <a href="#" className="text-gray-800 hover:text-amber-600 transition duration-500 ease-out">
+            <Link to={"#"} className="text-gray-800 hover:text-amber-600 transition duration-500 ease-out">
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#" className="text-gray-800 hover:text-amber-600 transition duration-500 ease-out">
+            <Link to={"/discover"} className="text-gray-800 hover:text-amber-600 transition duration-500 ease-out">
               Discover
-            </a>
+            </Link>
           </li>
         </ul>
         <LoginButton />
